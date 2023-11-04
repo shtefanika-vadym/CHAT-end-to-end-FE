@@ -1,0 +1,78 @@
+.parent {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 0.6fr 0.8fr;
+  margin: 100px 300px 100px 400px;
+  min-height: calc(100vh - 300px);
+  border-radius: 20px;
+  border: 1px solid #228be6;
+  position: relative;
+
+  &Submit {
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 0;
+  }
+
+  &Messages {
+    position: relative;
+    padding: 0 20px 0 0;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 593px;
+    overflow-x: hidden;
+  }
+
+  &Chat {
+    position: relative;
+  }
+
+  &Message {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+
+  &MyMessage {
+    justify-content: flex-end;
+  }
+
+  &NoMessages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 540px;
+  }
+
+  &NoMessages img {
+    width: 400px;
+  }
+
+  &Head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #228be6;
+  }
+
+  &Head h1 {
+    margin: 20px 0 10px 0;
+    font-size: 25px;
+  }
+
+  &Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  &Header span {
+    font-style: italic;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,54 @@
+.parent {
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  background-color: #228be6;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &Card {
+    display: flex;
+    column-gap: 20px;
+    padding: 10px 0 10px 0;
+    position: relative;
+  }
+
+  &Active {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1affd1;
+    right: 0;
+    top: 40%;
+    position: absolute;
+  }
+
+  &CardInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &LastMessage,
+  &Name {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+    white-space: nowrap;
+    color: #dbdbdb;
+  }
+
+  &Name {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  &Card:hover &LastMessage,
+  &Card:hover &Name {
+    color: #eeebeb;
+  }
+
+  &ActiveCard &LastMessage,
+  &ActiveCard &Name {
+    color: #eeebeb;
+  }
+}

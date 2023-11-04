@@ -1,0 +1,27 @@
+@import "src/app/style/responsive";
+
+.parent {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  &Background {
+    background-color: rgba(39, 47, 84, 1);
+    @include device(smallOnly) {
+      display: none !important;
+    }
+  }
+
+  &Background,
+  &Form {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &FormContent {
+    width: 100%;
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,85 @@
+@mixin device($breakpoint) {
+  @if $breakpoint == extraSmall {
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == extraMediumSmall {
+    @media only screen and (max-width: 580px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == smallOnly {
+    @media only screen and (max-width: 779px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mediumOnly {
+    @media only screen and (min-width: 780px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == extraSmallUp {
+    @media only screen and (min-width: 442px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mediumSmallUpOnly {
+    @media only screen and (min-width: 590px) and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mediumUp {
+    @media only screen and (min-width: 780px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == extraLargeOnly {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == largeUp {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == largeOnly {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == largeUpOnly {
+    @media only screen and (max-width: 1430px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == largeUpPlus {
+    @media only screen and (min-width: 1240px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == onlyExtraLarge {
+    @media only screen and (max-width: 1700px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == onlyExtraLargeUp {
+    @media only screen and (max-width: 1850px) {
+      @content;
+    }
+  }
+}
